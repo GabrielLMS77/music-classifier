@@ -12,11 +12,15 @@ A machine learning project for classifying music genres using audio features.
 - [x] Visualize waveform
 - [x] Analyze frequency spectrum
 - [x] Generate STFT spectrogram
-- [ ] Extract audio features
-- [ ] Train machine learning models
-- [ ] Evaluate models
+- [x] Extract MFCC audio features
+- [x] Create feature vectors
+- [x] Split data into training and test sets
+- [x] Train a Random Forest classifier
+- [x] Evaluate initial model accuracy
+- [ ] Analyze confusion matrix
+- [ ] Improve the classifier
 - [ ] Train a neural network
-- [ ] Compare approaches
+- [ ] Compare different approaches
 
 ## Technologies
 
@@ -25,6 +29,21 @@ A machine learning project for classifying music genres using audio features.
 - Librosa
 - Matplotlib
 - Scikit-learn
+
+## Initial Results
+
+The first Random Forest classifier was trained using 26 MFCC-based features
+(13 MFCC means and 13 MFCC standard deviations).
+
+The dataset contained 999 usable audio files after skipping one corrupted file.
+
+Using an 80/20 train-test split:
+
+- Training samples: 799
+- Test samples: 200
+- Features per song: 26
+- Initial accuracy: 62%
+
 
 ## Dataset
 
